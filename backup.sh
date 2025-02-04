@@ -1,13 +1,13 @@
 #!/bin/bash
 
-PROJECT_DIR="/root/enacton"            # Folder to back up
-BACKUP_DIR="/root/enacton/backup"      # Where to store backups
-GDRIVE_FOLDER="gdrive:/backups"        # Google Drive folder (configured via rclone)
+PROJECT_DIR="/root/enacton"            
+BACKUP_DIR="/root/enacton/backup"      
+GDRIVE_FOLDER="gdrive:/backups"        
 WEBHOOK_URL="https://webhook.site/f3e21f38-322b-494c-81ef-f9994b244999"
-SEND_NOTIFICATION=true                 # Set to false to disable webhook
-RETENTION_DAYS=7                       # Keep last 7 daily backups
-RETENTION_WEEKS=4                      # Keep last 4 weekly backups
-RETENTION_MONTHS=3                      # Keep last 3 monthly backups
+SEND_NOTIFICATION=true                 
+RETENTION_DAYS=7                      
+RETENTION_WEEKS=4                     
+RETENTION_MONTHS=3                      
 
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
 BACKUP_FILE="$BACKUP_DIR/backup_$TIMESTAMP.zip"
